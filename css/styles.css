@@ -1,3 +1,19 @@
-p {
+#result {
   display: none;
+  font-weight: bold;
+  color: #e100e5;
+  text-align: center;
+}
+body {
+  margin: 12px;
+  padding: 6px;
+  background-color: #000000;
+  color: #00d0ff;
+
+}
+h1 {
+  text-align: center;
+}
+label {
+  font-size: 20px;
 }

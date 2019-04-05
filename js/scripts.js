@@ -27,11 +27,10 @@ function inputLoop(number) {
 $(document).ready(function() {
   $("#user").submit(function(event) {
     event.preventDefault();
-    // inputCheck(number);
     var number = parseInt($("input#number").val());
     $("#result").text(inputLoop(number));
-    $("p").show();
-    // $("#result").text(result);
+    $("#result").show();
+
 
   });
 });
