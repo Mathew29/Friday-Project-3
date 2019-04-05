@@ -1,6 +1,6 @@
 # Beep Boop
 
-#### Number to roman numeral converter, 3/22/2019
+#### Changes all numbers with 1's, 2's, and 3's into a string such as "Beep!" or "Boop!", 4/5/2019
 
 #### By **Mathew Akre**
 
@@ -26,6 +26,9 @@ _It will create a web application that takes a inputed number from a user a retu
 3. Change directory to the Desktop
 4. Use the command
 5. Open index.html
+6. Or use the GUI and open the folder in the Desktop
+7. Find the folder name Friday-Project-3
+8. Open the file named index.html
 
 ## Technologies Used
 
