@@ -1,13 +1,4 @@
 // Business logic
-function inputCheck(number) {
-  if(isNaN(number)) {
-    console.log("please enter a number");
-  } else if (number < 0){
-    console.log("please enter a positive number")
-  }
-  return number;
-}
-
 function inputLoop(number) {
   var numberArray = []
   var beep = "Beep!"
@@ -18,8 +9,6 @@ function inputLoop(number) {
   };
   for(var i = 0; i <= number; i++) {
     numberString = numberArray[i];
-  console.log(numberArray[i]);
-  console.log(i);
   if (numberString.includes("3")) {
     numberArray[i] = sorryDave;
   } else if (numberString.includes("2")) {
@@ -29,22 +18,18 @@ function inputLoop(number) {
   } else {
 
   }
-  console.log(numberArray);
   }
   return numberArray;
 }
-
-
-
 
 
 // User Interface
 $(document).ready(function() {
   $("#user").submit(function(event) {
     event.preventDefault();
+    // inputCheck(number);
     var number = parseInt($("input#number").val());
-    $("#result").append("<p> " + inputLoop(number) + "</p>")
+    $("#result").append("<p> " + inputLoop(number) + "</p>");
 
   });
-
 });
