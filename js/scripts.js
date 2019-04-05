@@ -1,65 +1,44 @@
 // Business logic
-function range(number) {
-  var firstexception = [1];
-  var secondexception = [2];
-  var thirdexception = [3];
-  var numberArray = turnNumberToArray(number)
-  var newNumberArray = []
-
-  for (var i = 0; i <= number; i++) {
-    if (thirdexception == i) {
-      newNumberArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-      console.log("I'm sorry, Dave. I'm afraid I can't do that.")
-    } else if (secondexception == i) {
-      newNumberArray.push("Boop!");
-      console.log("BOOP!")
-    } else if (firstexception == i) {
-      newNumberArray.push("Beep!");
-      console.log("BEEP!")
-    } else {
-      newNumberArray.push(i);
-    }
-    console.log(i);
-    console.log(newNumberArray)
+function inputCheck(number) {
+  if(isNaN(number)) {
+    console.log("please enter a number");
+  } else if (number < 0){
+    console.log("please enter a positive number")
   }
   return number;
 }
-
-function turnNumberToArray(number){
-  var numberArray = (""+number).split("")
+function inputLoop(number) {
+  var numberArray = []
+  var beep = "Beep!"
+  var boop = "Boop!"
+  var sorryDave = "I'm sorry, Dave. I'm afraid I can't do that."
+  for (var i = 0; i <= number; i++)
+  numberString = number.toString();
+  if (i > 0 && numberString.includes("3")) {
+    numberArray.push(sorryDave);
+    console.log(numberArray);
+  } else if (numberString.includes("2")) {
+    numberArray.push(boop);
+    console.log(numberArray);
+  }else if (numberString.includes("1")) {
+    numberArray.push(beep);
+    console.log(numberArray);
+  } else {
+    numberArray.push(i.toString());
+    console.log(numberArray);
+  }
+  console.log(number);
   return numberArray;
 }
 
-// function exception(number) {
-//   var numberArray = []
-//   for (i = 0; i <= number ; i++) {
-//     numberArray.push(i);
-//     if (i == 1) {
-//       console.log("hi")
-//     } else if (i == 2) {
-//       console.log("hello")
-//     } else if (i == 3) {
-//       console.log("bye")
-//     } else {
-//
-//     }
-//     console.log(numberArray)
-//   }
-//   return number
-// }
 
-// function turnNumberToArray(number) {
-//   var numberArray =(""+number).split("")
-//   return numberArray;
-// }
-var number = 12
+var number = 32
 
 // console.log(exception(number))
 
 
+console.log(inputLoop(number));
 
 
-
-
-console.log(range(number));
+console.log(inputCheck(number));
 // User Interface
