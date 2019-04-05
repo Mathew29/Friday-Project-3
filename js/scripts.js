@@ -29,7 +29,9 @@ $(document).ready(function() {
     event.preventDefault();
     // inputCheck(number);
     var number = parseInt($("input#number").val());
-    $("#result").append("<p> " + inputLoop(number) + "</p>");
+    $("#result").text(inputLoop(number));
+    $("p").show();
+    // $("#result").text(result);
 
   });
 });
