@@ -12,27 +12,36 @@ function inputLoop(number) {
   var beep = "Beep!"
   var boop = "Boop!"
   var sorryDave = "I'm sorry, Dave. I'm afraid I can't do that."
-  for (var i = 0; i <= number; i++)
-  numberString = number.toString();
-  if (i > 0 && numberString.includes("3")) {
-    numberArray.push(sorryDave);
+  for (var i = 0; i <= number; i++) {
+    numberString = number.toString();
+    if (i > 0 && numberString.includes("3")) {
+      numberArray.push(sorryDave);
+      console.log(numberArray);
+    } else if (numberString.includes("2")) {
+      numberArray.push(boop);
+      console.log(numberArray);
+    }else if (numberString.includes("1")) {
+      numberArray.push(beep);
+      console.log(numberArray);
+    } else {
+      numberArray.push(i);
+      console.log(numberArray);
+    }
+
     console.log(numberArray);
-  } else if (numberString.includes("2")) {
-    numberArray.push(boop);
-    console.log(numberArray);
-  }else if (numberString.includes("1")) {
-    numberArray.push(beep);
-    console.log(numberArray);
-  } else {
-    numberArray.push(i.toString());
-    console.log(numberArray);
+    return numberArray;
   }
-  console.log(number);
-  return numberArray;
+
+  console.log(numberArray);
+}
+function numberRange(number) {
+  for (var i = 0; i <= number; i++) {
+
+  }
 }
 
 
-var number = 32
+var number = 23
 
 // console.log(exception(number))
 
