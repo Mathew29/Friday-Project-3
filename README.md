@@ -6,7 +6,7 @@
 
 ## Description
 
-_
+_It will create a web application that takes a inputed number from a user a returns that value in a range from 0 to that value. Every number that has a 1 will say "Beep!" Every number with a 2 will say "Boop!" and every number with a number 3 will say "I'm sorry, Dave. I'm afraid I can't do that." Ever number with a 1 should apply unless there is a 2 or 3. Every number with a 2 should apply unless there is a 3._
 
 
 ## Behavior-Driven Development
