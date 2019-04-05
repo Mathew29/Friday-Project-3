@@ -1,27 +1,33 @@
 // Business logic
 function range(number) {
-  var firstexception = ["1"]
-  var secondexception = ["2"]
-  var thirdexception = ["3"]
-  var numberArray = turnNumberToArray(number);
+  var firstexception = [1];
+  var secondexception = [2];
+  var thirdexception = [3];
+  var numberArray = turnNumberToArray(number)
+  var newNumberArray = []
 
-  for (var i = 0; i < number; i++) {
-    if (thirdexception.includes(number[i])) {
-      number[i] = "I'm sorry, Dave. I'm afraid I can't do that."
-    } else if (secondexception.includes(number[i])) {
-      number[i] = "Boop!"
-    } else if (firstexception.includes(number[i])) {
-      number[i] = "Beep!"
+  for (var i = 0; i <= number; i++) {
+    if (thirdexception == i) {
+      newNumberArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      console.log("I'm sorry, Dave. I'm afraid I can't do that.")
+    } else if (secondexception == i) {
+      newNumberArray.push("Boop!");
+      console.log("BOOP!")
+    } else if (firstexception == i) {
+      newNumberArray.push("Beep!");
+      console.log("BEEP!")
     } else {
-      return i;
+      newNumberArray.push(i);
     }
+    console.log(i);
+    console.log(newNumberArray)
   }
   return number;
 }
 
 function turnNumberToArray(number){
   var numberArray = (""+number).split("")
-  return numberArray
+  return numberArray;
 }
 
 // function exception(number) {
@@ -46,7 +52,7 @@ function turnNumberToArray(number){
 //   var numberArray =(""+number).split("")
 //   return numberArray;
 // }
-var number = "25"
+var number = 12
 
 // console.log(exception(number))
 
