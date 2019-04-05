@@ -13,22 +13,24 @@ function inputLoop(number) {
   var beep = "Beep!"
   var boop = "Boop!"
   var sorryDave = "I'm sorry, Dave. I'm afraid I can't do that."
-  for (var i = 0; i <= number - 1; i++)
-  numberString = number.toString();
-  if (i > 0 && numberString.includes("3")) {
-    numberArray.push(sorryDave);
-    console.log(numberArray);
+  for (var a = 0; a <= number; a++) {
+    numberArray.push(a.toString());
+  };
+  for(var i = 0; i <= number; i++)
+  numberString = numberArray[i];
+  console.log(numberArray[0]);
+  console.log(i);
+  debugger;
+  if (numberString.includes("3")) {
+    numberArray[i] = sorryDave;
   } else if (numberString.includes("2")) {
-    numberArray.push(boop);
-    console.log(numberArray);
+    numberArray[i] = boop;
   }else if (numberString.includes("1")) {
-    numberArray.push(beep);
-    console.log(numberArray);
+    numberArray[i] = beep;
   } else {
-    numberArray.push(i.toString());
-    console.log(numberArray);
+
   }
-  console.log(number);
+  console.log(numberArray);
   return numberArray;
 }
 
