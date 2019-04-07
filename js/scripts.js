@@ -9,15 +9,15 @@ function inputLoop(number) {
   };
   for(var i = 0; i <= number; i++) {
     numberString = numberArray[i];
-  if (numberString.includes("3")) {
-    numberArray[i] = sorryDave;
-  } else if (numberString.includes("2")) {
-    numberArray[i] = boop;
-  }else if (numberString.includes("1")) {
-    numberArray[i] = beep;
-  } else {
+    if (numberString.includes("3")) {
+      numberArray[i] = sorryDave;
+    } else if (numberString.includes("2")) {
+      numberArray[i] = boop;
+    }else if (numberString.includes("1")) {
+      numberArray[i] = beep;
+    } else {
 
-  }
+    }
   }
   return numberArray;
 }
